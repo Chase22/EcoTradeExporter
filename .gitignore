@@ -1,0 +1,10 @@
+# env files
+.env
+
+# Build files
+.idea
+
+*.iml
+
+# data folder
+data
