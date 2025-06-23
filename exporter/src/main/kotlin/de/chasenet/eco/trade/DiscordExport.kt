@@ -10,14 +10,14 @@ data class DiscordExport(
     val channel: DiscordChannel,
     val messages: List<DiscordMessage>,
     @Contextual val exportedAt: OffsetDateTime,
-    val messageCount: Int
+    val messageCount: Int,
 )
 
 @Serializable
 data class DiscordGuild(
     val id: String,
     val name: String,
-    val icon: String? = null
+    val icon: String? = null,
 )
 
 @Serializable
@@ -27,7 +27,7 @@ data class DiscordChannel(
     val categoryId: String? = null,
     val category: String? = null,
     val name: String,
-    val topic: String? = null
+    val topic: String? = null,
 )
 
 @Serializable
@@ -48,9 +48,8 @@ data class DiscordAuthor(
     val nickname: String? = null,
     val color: String? = null,
     val isBot: Boolean,
-    val avatarUrl: String? = null
+    val avatarUrl: String? = null,
 )
-
 
 @Serializable
 data class DiscordEmbed(
@@ -67,5 +66,5 @@ data class DiscordEmbed(
 data class DiscordEmbedField(
     val name: String,
     val value: String,
-    val isInline: Boolean
+    val isInline: Boolean,
 )
